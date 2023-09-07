@@ -1,0 +1,102 @@
+.slider-container {
+    width: 80%;
+    margin: 50px auto;
+    position: relative;
+}
+
+.slider-track {
+    width: 1117px;
+    height: 5px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(237, 241, 248, 1);
+}
+
+.slider-runner {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border: 5px solid #5cadea;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 1;
+}
+
+.slider-filled {
+    height: 5px;
+    background-color: #5cadea;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.slider-labels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding-top: 50px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    z-index: -1;
+    width: 101%;
+}
+
+.tooltip {
+    position: absolute;
+    display: none;
+    z-index: 2;
+    width: 70px;
+    height: 66px;
+    left: -20px;
+    box-shadow: 0 5px 15px 0 #0e588f33;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    border-radius: 6px;
+}
+
+#tooltip1 {
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+#tooltip2 {
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.slider-labels span:nth-child(n+2):nth-child(-n+12),
+.slider-labels span:nth-child(n+14):nth-child(-n+24),
+.slider-labels span:nth-child(n+26):nth-child(-n+36),
+.slider-labels span:nth-child(n+38):nth-child(-n+48),
+.slider-labels span:nth-child(n+50):nth-child(-n+60),
+.slider-labels span:nth-child(n+62):nth-child(-n+72) {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(153, 153, 153, 1);
+}
+
+.span-year {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(51, 51, 51, 1);
+}

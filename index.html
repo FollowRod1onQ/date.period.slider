@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Double Range Slider</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
+</head>
+<body>
+<div class="content">
+    <div class="buttons">
+        <div class="all-years-block-btn">
+            <button onclick="showYears(this)" class="all-years-btn">Все года</button>
+        </div>
+        <div class="all-months-block-btn">
+            <button onclick="showMonths(this)" class="all-months-btn">Месяца</button>
+        </div>
+    </div>
+    <div class="all-years-block">
+        <div class="custom-slider-container">
+            <div class="custom-slider-track"></div>
+            <div class="custom-slider-runner" id="custom-runner1"></div>
+            <div class="custom-slider-runner" id="custom-runner2"></div>
+            <div class="custom-slider-filled" id="custom-filled"></div>
+            <div class="custom-slider-labels">
+                <span>2014</span>
+                <span>2015</span>
+                <span>2016</span>
+                <span>2017</span>
+                <span>2018</span>
+                <span>2019</span>
+                <span>2020</span>
+                <span>2021</span>
+            </div>
+            <div class="custom-tooltip" id="custom-tooltip1"></div>
+            <div class="custom-tooltip" id="custom-tooltip2"></div>
+        </div>
+    </div>
+    <div class="all-months-block">
+        <div class="slider-container">
+            <div class="slider-track"></div>
+            <div class="slider-runner" id="runner1"></div>
+            <div class="slider-runner" id="runner2"></div>
+            <div class="slider-filled" id="filled"></div>
+            <div class="slider-labels">
+                <span class="span-year">2015</span>
+                <span>Фев</span>
+                <span>Мар</span>
+                <span>Апр</span>
+                <span>Май</span>
+                <span>Июн</span>
+                <span>Июл</span>
+                <span>Авг</span>
+                <span>Сен</span>
+                <span>Окт</span>
+                <span>Ноя</span>
+                <span>Дек</span>
+                <span class="span-year">2016</span>
+                <span>Фев</span>
+                <span>Мар</span>
+                <span>Апр</span>
+                <span>Май</span>
+                <span>Июн</span>
+                <span>Июл</span>
+                <span>Авг</span>
+                <span>Сен</span>
+                <span>Окт</span>
+                <span>Ноя</span>
+                <span>Дек</span>
+                <span class="span-year">2017</span>
+            </div>
+            <div class="tooltip" id="tooltip1"></div>
+            <div class="tooltip" id="tooltip2"></div>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+<script src="script2.js"></script>
+</body>
+</html>

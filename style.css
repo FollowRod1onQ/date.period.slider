@@ -1,0 +1,136 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1500px;
+    height: 100%;
+}
+
+body .content {
+    width: 100%;
+}
+
+.all-years-block {
+    display: none;
+    position: relative; /* Добавьте это свойство */
+}
+
+
+.all-months-block {
+    display: none;
+}
+
+.custom-slider-container {
+    width: 80%;
+    margin: 50px auto;
+    position: relative;
+}
+
+.custom-slider-track {
+    width: 100%;
+    height: 5px;
+    background-color: #ccc;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.custom-slider-runner {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border: 5px solid #5CADEA;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 1;
+}
+
+.custom-slider-filled {
+    height: 5px;
+    background-color: #5CADEA;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.custom-slider-labels span {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(153, 153, 153, 1);
+}
+
+.custom-slider-labels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding-top: 50px;
+    z-index: -1;
+}
+
+.custom-tooltip {
+    position: absolute;
+    display: none;
+    z-index: 2;
+    width: 70px;
+    height: 66px;
+    left: -20px;
+    box-shadow: 0 5px 15px 0 #0e588f33;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    border-radius: 6px;
+}
+
+#custom-tooltip1 {
+    transform: translate(-185px, -110px);
+    z-index: 2;
+    background: white;
+}
+
+#custom-tooltip2 {
+    transform: translate(-185px, -10px);
+    z-index: 2;
+    background: white;
+}
+
+.all-years-btn {
+    background: none;
+    border: none;
+    color: rgba(1, 103, 179, 0.5);
+}
+
+.all-years-btn:hover {
+    cursor: pointer;
+    color: rgba(1, 103, 179, 1);
+    box-shadow: 0 1px 0 0 rgba(211, 220, 241, 1);
+}
+
+.all-years-btn:active {
+    color: rgba(1, 103, 179, 1);
+}
+
+.all-months-btn {
+    background: none;
+    border: none;
+    color: rgba(1, 103, 179, 0.5);
+}
+
+.all-months-btn:hover {
+    cursor: pointer;
+    color: rgba(1, 103, 179, 1);
+    box-shadow: 0 1px 0 0 rgba(211, 220, 241, 1);
+}
+
+.all-months-btn:active {
+    color: rgba(1, 103, 179, 1);
+}
